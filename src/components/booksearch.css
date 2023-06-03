@@ -107,3 +107,25 @@ input[type="text"] {
 .reset-button:hover {
   background-color: #b02a37;
 }
+
+
+.footer__socials{
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 40px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+
+.footer__social-link{
+    color: #ffffff;
+    transition: all 0.7s ease-in-out;
+    font-size: 22px;
+}
+
+.footer__social-link:hover{
+    color: #ffa500;
+}

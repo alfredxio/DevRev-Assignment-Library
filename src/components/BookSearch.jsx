@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import BookCard from './BookCard/BookCard';
 import './booksearch.css';
+import { FaLinkedin, FaGithub, FaLink } from "react-icons/fa";
 
 const BookSearch = () => {
   const [books, setBooks] = useState([]);
@@ -71,7 +72,24 @@ const BookSearch = () => {
   return (
     <div>
         <h2 className="section__title text-cs">LIBRARY-X</h2>
-        <p className="section__subtitle">Search <span>Books</span></p>
+        <p className="section__subtitle">Rohit Raj</p>
+        
+        <div className="footer__socials">
+          <a
+            href="https://www.linkedin.com/in/rohitraj45/"
+            className="footer__social-link"
+          >
+            <FaLinkedin />
+          </a>
+
+          <a href="https://github.com/alfredxio" className="footer__social-link">
+            <FaGithub />
+          </a>
+
+          <a href="https://alfredx.in" className="footer__social-link">
+            <FaLink />
+          </a>
+        </div>
 
       <div className="search-form">
         <input
