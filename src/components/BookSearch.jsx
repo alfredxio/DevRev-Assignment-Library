@@ -70,6 +70,9 @@ const BookSearch = () => {
 
   return (
     <div>
+        <h2 className="section__title text-cs">LIBRARY-X</h2>
+        <p className="section__subtitle">Search <span>Books</span></p>
+
       <div className="search-form">
         <input
           type="text"
@@ -96,10 +99,10 @@ const BookSearch = () => {
           onChange={(e) => setPublishDate(e.target.value)}
         />
         <button className="search-button" onClick={handleSearchClick}>
-          Search
+          SEARCH
         </button>
         <button className="reset-button" onClick={handleReset}>
-          Reset
+          RESET
         </button>
       </div>
 
@@ -118,7 +121,7 @@ const BookSearch = () => {
       {isLoading && <p>Loading...</p>}
 
       {!isLoading && books.length > 0 && books.length % 10 === 0 && (
-        <button onClick={handleLoadMore}>Load More</button>
+        <button onClick={handleLoadMore} className="search-button">Load More</button>
       )}
     </div>
   );

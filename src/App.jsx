@@ -3,13 +3,14 @@ import './App.css'
 import BookSearch from './components/BookSearch';
 
 function App() {
-
   return (
-    <main className="main">
-      <h1>Book Search</h1>
-      <BookSearch />
-    </main>
-  )
+    <div>
+      <main className="main">
+        <BookSearch />
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;
+
